@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(90deg, #52B28A, #4DAF8A, #44A68E, #389991, #34929A, #32819D, #31749C, #386C9E, #404F9A);
+}
+
+.card {
+    background: #E0DEDF;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    margin: 170px auto;
+    border-radius: 10px;
+}
+
+.timer {
+    animation: spin 2s infinite;
+    width: 180px;
+    height: 180px;
+    margin-top: 30px;
+    border: 5px solid #32819D;
+    border-top-color: #34929A;
+    border-right-color: #389991;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 90px);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#minutes,
+#seconds,
+#point {
+    position: relative;
+    left: calc(50% - 65px);
+    top: calc(50% - 165px);
+    display: inline-block;
+    font-size: 3rem;
+    color: #575556;
+    font-weight: 300;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+}
+
+.button button {
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 15px);
+    border-radius: 100%;
+    border: 2px solid #404F9A;
+    cursor: pointer;
+}
+
+.button .button-start {
+    background: #404F9A;
+    color: #ffff;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.button .button-start p {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: calc(50% - 26px);
+    padding-left: 2px;
+    font-weight: 500;
+}
+
+.button svg {
+    position: relative;
+    top: calc(50% - 20px);
+    color: #404F9A;
+}
+
+.button .button-start svg {
+    color: #ffff;
+}
